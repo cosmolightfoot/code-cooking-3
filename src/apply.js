@@ -10,10 +10,16 @@ peanutRangeNode.addEventListener('change', function() {
     allergicNumberNode.textContent = peanutRangeNode.value;
 });
 yesNode.addEventListener('change', function() {
+    allergicNumberNode.textContent = '1';
     peanutRangeNode.value = 1;
+    peanutRangeNode.min = 1;
+    peanutRangeNode.disabled = false;
 });
 noNode.addEventListener('change', function() {
+    allergicNumberNode.textContent = 0;
     peanutRangeNode.value = 0;
+    peanutRangeNode.value = 0;
+    peanutRangeNode.disabled = true;
 });
 peanutRangeNode.addEventListener('change', function() {
     allergicNumberNode.textContent = peanutRangeNode.value;
