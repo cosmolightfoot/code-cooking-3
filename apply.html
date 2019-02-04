@@ -20,6 +20,7 @@
                     <input 
                         type="text"
                         id="name"
+                        name="name"
                         autocomplete="off"
                         min-length="1"
                         max-length="15"
@@ -28,9 +29,21 @@
                     >
 
                 </p>
+                <p>
+                    <label for="zip-code">Zip-Code</label>
+                    <input
+                        type=""
+                        name="zipcode"
+                        id="zip-code"
+                        minlength="5"
+                        placeholder="Example 97211"
+                        required
+                    >
+                </p>
             </section>
             <button>Submit Application</button>
         </form>
     </main>
+    <script type="module" src="./src/apply.js"></script>
 </body>
 </html>
