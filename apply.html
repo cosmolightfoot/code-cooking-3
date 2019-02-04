@@ -25,7 +25,7 @@
                         min-length="1"
                         max-length="15"
                         required
-                        value="jane doe"
+                        placeholder="Jane Doe"
                     >
 
                 </p>
@@ -73,15 +73,26 @@
                     >
                     <span id="allergic-number">0</span>
                 </p>
-                <!-- <p>
-                    <label for="peanuts-2">On Wut Scale?!?!!</label>
+                <p>
+                    <label for="peanuts-two">On Wut Scale?!?!!</label>
                     <input 
                         type="number"
-                        id="peanuts-2"
-                        name="peanuts-2"
-                        min="0"
+                        id="peanuts-two"
+                        name="peanuts-two"
+                        min="1"
                         max="10"
-                </p> -->
+                    >
+                </p>
+            </section>
+            <section id="last-section">
+                <h2>Last Section</h2>
+                <label for="role">Choose A Role</label>
+                <select id="role" name="role" required>
+                    <option value="" hidden disabled selected>Select Role</option>
+                    <option value="fire-breather">Fire Breather</option>
+                    <option value="web-developer">Web Developer</option>
+                    <option value="skater">Skater</option>
+                </select>
             </section>
             <button>Submit Application</button>
         </form>
