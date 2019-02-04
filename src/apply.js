@@ -8,13 +8,15 @@ const noNode = document.getElementById('no');
 
 peanutRangeNode.addEventListener('change', function() {
     allergicNumberNode.textContent = peanutRangeNode.value;
-    
 });
 yesNode.addEventListener('change', function() {
-    console.log('yes', yesNode.checked)
+    peanutRangeNode.value = 1;
 });
 noNode.addEventListener('change', function() {
-    console.log('no', noNode.checked)
+    peanutRangeNode.value = 0;
+});
+peanutRangeNode.addEventListener('change', function() {
+    allergicNumberNode.textContent = peanutRangeNode.value;
 });
 
 //alternatively can select nodes as formNode.elements.name.value where .name corresponds
@@ -22,7 +24,7 @@ noNode.addEventListener('change', function() {
 
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();
-
+    // if(yesNode)
     const applicant = {
         name: nameNode.value,
         zipCode: zipCodeNode.value,
